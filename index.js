@@ -42,7 +42,7 @@ var schema = {
         required: true,
         message :"Message cannot be empty or Message length is greater than 500 characters.",
         conform: function (value) {
-        if(value.length > 5) {
+        if(value.length > 500) {
           return false;
         }  
         return true;
